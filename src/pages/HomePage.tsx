@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HeroCarousel from '../components/HeroCarousel';
 import ProductCard from '../components/ProductCard';
+import SEO from '../components/SEO';
 import { Truck, Shield, Globe, Award, Users, Leaf, TrendingUp, Target, Phone, Mail } from 'lucide-react';
 
 const HomePage = () => {
@@ -68,6 +69,12 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO 
+        title="Premium Agriculture Products Export - Tamil Nadu India"
+        description="Leading exporter of premium agriculture products including turmeric powder, turmeric fingers, fresh Cavendish bananas, Alphonso & Totapuri mango pulp, and spices from Tamil Nadu, India. HACCP certified, organic certified, serving 25+ countries worldwide with sustainable farming practices."
+        keywords="agriculture export India, turmeric export, banana export, mango pulp export, spices export, Indian agriculture products, Tamil Nadu agriculture export, HACCP certified, organic certified, sustainable agriculture, farm to export, international agriculture trade, Senthur Velavan Traders"
+        url="https://senthurvelavantraders.com/"
+      />
       <Header />
 
       {/* Hero Carousel */}

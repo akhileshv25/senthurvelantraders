@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://senthurvelavantraders.com/</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://senthurvelavantraders.com/logo.svg</image:loc>
+      <image:title>Senthur Velavan Traders Logo</image:title>
+      <image:caption>Premium Agriculture Products Export from Tamil Nadu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://senthurvelavantraders.com/Product/turmaric.png</image:loc>
+      <image:title>Premium Turmeric Export</image:title>
+      <image:caption>High-quality turmeric powder and fingers</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://senthurvelavantraders.com/banana.png</image:loc>
+      <image:title>Fresh Bananas Export</image:title>
+      <image:caption>Premium Cavendish bananas from Tamil Nadu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://senthurvelavantraders.com/Product/Mango.png</image:loc>
+      <image:title>Mango Pulp Export</image:title>
+      <image:caption>Pure Alphonso and Totapuri mango pulp</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Products Page -->
+  <url>
+    <loc>https://senthurvelavantraders.com/products</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://senthurvelavantraders.com/about</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://senthurvelavantraders.com/services</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://senthurvelavantraders.com/contact</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
+

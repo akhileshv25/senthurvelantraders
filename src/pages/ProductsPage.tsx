@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
+import SEO from '../components/SEO';
 import { Filter, Search, Package, Leaf, Truck, Award } from 'lucide-react';
 
 const ProductsPage = () => {
@@ -205,6 +206,12 @@ const ProductsPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO 
+        title="Premium Agriculture Products for Export"
+        description="Comprehensive range of premium agriculture products including turmeric powder & fingers, fresh Cavendish bananas, Alphonso & Totapuri mango pulp, red chilli powder, coriander powder, cumin seeds, ginger powder, cashew nuts, and coconut products. HACCP certified, ISO 22000 certified, organic certified, export quality products."
+        keywords="turmeric powder export, turmeric fingers, Cavendish banana export, Alphonso mango pulp, Totapuri mango pulp, red chilli powder export, coriander powder export, cumin seeds export, ginger powder export, cashew nuts export, coconut products export, desiccated coconut, virgin coconut oil, banana chips, spices export, organic spices, HACCP certified products, ISO 22000, FSSAI licensed"
+        url="https://senthurvelavantraders.com/products"
+      />
       <Header />
 
       {/* Hero Section */}

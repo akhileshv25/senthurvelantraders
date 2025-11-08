@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 import { Truck, Shield, Globe, FileText, Users, Award, Package, Clock, CheckCircle } from 'lucide-react';
 
 const ServicesPage = () => {
@@ -128,6 +129,12 @@ const ServicesPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO 
+        title="Export Services - Comprehensive Agriculture Export Solutions"
+        description="End-to-end export services for agriculture products including product sourcing, quality assurance, export logistics, documentation support, market intelligence, and customer support. HACCP certified facilities, ISO 22000 certified, complete customs clearance and shipping documentation. Serving global markets with reliable delivery."
+        keywords="agriculture export services, export logistics, export documentation, customs clearance, phytosanitary certificate, certificate of origin, quality assurance, HACCP certified facilities, export process, international shipping, product sourcing India, agriculture supply chain, export compliance, trade documentation, global logistics, container shipping, quality testing, pesticide residue testing, laboratory testing, export consultation"
+        url="https://senthurvelavantraders.com/services"
+      />
       <Header />
 
       {/* Hero Section */}

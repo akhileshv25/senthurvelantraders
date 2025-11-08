@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
+import SEO from '../components/SEO';
 import { Phone, Mail, MapPin, Clock, Globe, Users } from 'lucide-react';
 
 const ContactPage = () => {
@@ -54,6 +55,12 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO 
+        title="Contact Us - Get in Touch for Agriculture Export Inquiries"
+        description="Contact Senthur Velavan Traders Pvt Ltd for premium agriculture product export inquiries. Located in Coimbatore, Tamil Nadu, India. Phone: +91 9790015428, +91 6369054818. Email: senthurvelavantraders16@gmail.com. Serving global markets including USA, UK, Germany, Australia, Middle East, Southeast Asia, and Africa. Export consultation, product samples, and documentation support available."
+        keywords="contact agriculture exporter India, agriculture export inquiry, Coimbatore exporter contact, Tamil Nadu agriculture export, export consultation India, agriculture product samples, export quotation, international trade inquiry, agriculture export partnership, bulk agriculture products, wholesale spice exporter contact, Senthur Velavan Traders contact, agriculture B2B inquiry"
+        url="https://senthurvelavantraders.com/contact"
+      />
       <Header />
 
       {/* Hero Section */}

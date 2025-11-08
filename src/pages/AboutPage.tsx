@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 import { Users, Target, Award, Shield, Globe, Leaf, Truck, CheckCircle } from 'lucide-react';
 
 const AboutPage = () => {
@@ -76,6 +77,12 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO 
+        title="About Us - Leading Agriculture Export Company from Tamil Nadu"
+        description="Established in 2014, Senthur Velavan Traders Pvt Ltd is a trusted name in agriculture product exports from Tamil Nadu, India. HACCP certified, ISO 22000 certified, Organic certified. Serving 25+ countries with 500+ tons exported annually. Direct sourcing from farmers, state-of-the-art processing facilities, complete export documentation support."
+        keywords="agriculture export company India, Tamil Nadu agriculture exporter, HACCP certification, ISO 22000 certified, organic certification, FSSAI licensed, APEDA registered, Spices Board registered, sustainable farming, farmer partnership, agriculture trade company, international export, quality assurance, export documentation, customs clearance, agriculture business India, Senthur Velavan Traders"
+        url="https://senthurvelavantraders.com/about"
+      />
       <Header />
 
       {/* Hero Section */}
