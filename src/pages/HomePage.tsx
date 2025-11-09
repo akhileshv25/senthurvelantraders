@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HeroCarousel from '../components/HeroCarousel';
-import ProductCard from '../components/ProductCard';
 import SEO from '../components/SEO';
 import { Truck, Shield, Globe, Award, Users, Leaf, TrendingUp, Target, Phone, Mail } from 'lucide-react';
 
