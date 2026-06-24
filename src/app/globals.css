@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes float-slow {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    33% {
+      transform: translateY(-20px) rotate(1deg);
+    }
+    66% {
+      transform: translateY(-10px) rotate(-1deg);
+    }
+  }
+
+  @keyframes float-fast {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-15px) rotate(2deg);
+    }
+    50% {
+      transform: translateY(-25px) rotate(-1deg);
+    }
+    75% {
+      transform: translateY(-10px) rotate(1deg);
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-float-slow {
+    animation: float-slow 7s ease-in-out infinite;
+  }
+
+  .animate-float-fast {
+    animation: float-fast 9s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+  }
+
+  /* Splash animations */
+  @keyframes splash-drop-1 {
+    0% { transform: translate(0, 0) scale(1); opacity: 0; }
+    10% { opacity: 0.9; }
+    50% { transform: translate(-80px, -120px) scale(0.8); opacity: 0.7; }
+    100% { transform: translate(-120px, -180px) scale(0.3); opacity: 0; }
+  }
+  @keyframes splash-drop-2 {
+    0% { transform: translate(0, 0) scale(1); opacity: 0; }
+    10% { opacity: 0.85; }
+    50% { transform: translate(90px, -100px) scale(0.7); opacity: 0.6; }
+    100% { transform: translate(140px, -160px) scale(0.2); opacity: 0; }
+  }
+  @keyframes splash-drop-3 {
+    0% { transform: translate(0, 0) scale(1); opacity: 0; }
+    10% { opacity: 0.8; }
+    50% { transform: translate(-50px, -140px) scale(0.9); opacity: 0.5; }
+    100% { transform: translate(-70px, -200px) scale(0.2); opacity: 0; }
+  }
+  @keyframes splash-drop-4 {
+    0% { transform: translate(0, 0) scale(1); opacity: 0; }
+    10% { opacity: 0.9; }
+    50% { transform: translate(60px, -80px) scale(0.6); opacity: 0.7; }
+    100% { transform: translate(100px, -130px) scale(0.2); opacity: 0; }
+  }
+  @keyframes splash-drop-5 {
+    0% { transform: translate(0, 0) scale(1); opacity: 0; }
+    10% { opacity: 0.7; }
+    50% { transform: translate(30px, -160px) scale(0.8); opacity: 0.5; }
+    100% { transform: translate(50px, -220px) scale(0.15); opacity: 0; }
+  }
+  @keyframes splash-side-1 {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.8; }
+    50% { transform: translate(-100px, -30px) scale(0.6) rotate(-20deg); opacity: 0.5; }
+    100% { transform: translate(-160px, 20px) scale(0.2) rotate(-40deg); opacity: 0; }
+  }
+  @keyframes splash-side-2 {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.8; }
+    50% { transform: translate(110px, -20px) scale(0.6) rotate(15deg); opacity: 0.5; }
+    100% { transform: translate(170px, 30px) scale(0.2) rotate(30deg); opacity: 0; }
+  }
+  @keyframes splash-ring {
+    0% { transform: scale(0.3); opacity: 0.6; }
+    100% { transform: scale(2.5); opacity: 0; }
+  }
+  @keyframes splash-wave {
+    0% { transform: scale(0.5) translateY(0); opacity: 0.4; border-radius: 50%; }
+    50% { transform: scale(1.2) translateY(-20px); opacity: 0.2; border-radius: 45% 55% 50% 50%; }
+    100% { transform: scale(1.8) translateY(-40px); opacity: 0; border-radius: 40% 60% 55% 45%; }
+  }
+  @keyframes drip {
+    0% { transform: translateY(0) scaleY(1); opacity: 0.7; }
+    60% { transform: translateY(80px) scaleY(1.5); opacity: 0.5; }
+    100% { transform: translateY(120px) scaleY(0.5); opacity: 0; }
+  }
+
+  .splash-drop-1 { animation: splash-drop-1 2.5s ease-out infinite; }
+  .splash-drop-2 { animation: splash-drop-2 2.8s ease-out infinite 0.3s; }
+  .splash-drop-3 { animation: splash-drop-3 3s ease-out infinite 0.6s; }
+  .splash-drop-4 { animation: splash-drop-4 2.2s ease-out infinite 0.9s; }
+  .splash-drop-5 { animation: splash-drop-5 3.2s ease-out infinite 0.15s; }
+  .splash-side-1 { animation: splash-side-1 2.6s ease-out infinite 0.4s; }
+  .splash-side-2 { animation: splash-side-2 2.4s ease-out infinite 0.7s; }
+  .splash-ring { animation: splash-ring 3s ease-out infinite; }
+  .splash-wave { animation: splash-wave 3.5s ease-out infinite 0.5s; }
+  .splash-drip { animation: drip 2s ease-in infinite 1s; }
+
+  .shadow-3xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #015f9d;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #034b82;
+  }
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+
+  * {
+    @apply transition-colors duration-200;
+  }
+}
