@@ -130,7 +130,7 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl overflow-hidden">
-            <div className="absolute inset-0 bg-[url('/farm.jpg')] bg-cover bg-center" />
+            <div className="absolute inset-0 bg-[url('/farm.webp')] bg-cover bg-center" />
             <div className="absolute inset-0 bg-gray-900/80" />
             <div className="absolute top-0 right-0 w-80 h-80 bg-primary-500/20 rounded-full blur-[100px]" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-green-500/15 rounded-full blur-[80px]" />

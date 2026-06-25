@@ -15,7 +15,7 @@ const featuredProducts = [
       { label: 'Grade', value: 'Export A+' },
     ],
     details: ['Organic Certified', 'Direct Farm Sourcing', 'Export Quality'],
-    image: '/Product/turmaric.png',
+    image: '/Product/turmaric.webp',
     accentFrom: '#EA580C',
     accentTo: '#D97706',
     bgColor: '#FFF7ED',
@@ -37,7 +37,7 @@ const featuredProducts = [
       { size: '20 kg', type: 'Aseptic Bag in Box', desc: 'Mid-size industrial use' },
       { size: '215/228 kg', type: 'Aseptic Bag in Drum', desc: 'Bulk industrial supply' },
     ],
-    image: '/Product/Mango.png',
+    image: '/Product/Mango.webp',
     accentFrom: '#DC2626',
     accentTo: '#EA580C',
     bgColor: '#FEF3C7',
@@ -508,7 +508,7 @@ export default function HomeContent() {
             className="relative rounded-3xl overflow-hidden"
           >
             {/* Background image */}
-            <div className="absolute inset-0 bg-[url('/farm.jpg')] bg-cover bg-center" />
+            <div className="absolute inset-0 bg-[url('/farm.webp')] bg-cover bg-center" />
             <div className="absolute inset-0 bg-gradient-to-br from-gray-900/85 via-gray-900/75 to-primary-900/80" />
 
             {/* Decorative elements */}
