@@ -32,10 +32,10 @@ const featuredProducts = [
     ],
     details: [],
     packaging: [
-      { image: '/packaging/ots-can-3kg.png', size: '3.1 kg', type: 'OTS Can', desc: 'Retail & food service use' },
-      { image: '/packaging/ots-can-850g.png', size: '850 gm', type: 'OTS Can', desc: 'Small retail packing' },
-      { image: '/packaging/aseptic-box-20kg.png', size: '20 kg', type: 'Aseptic Bag in Box', desc: 'Mid-size industrial use' },
-      { image: '/packaging/aseptic-drum-215kg.png', size: '215/228 kg', type: 'Aseptic Bag in Drum', desc: 'Bulk industrial supply' },
+      { size: '3.1 kg', type: 'OTS Can', desc: 'Retail & food service use' },
+      { size: '850 gm', type: 'OTS Can', desc: 'Small retail packing' },
+      { size: '20 kg', type: 'Aseptic Bag in Box', desc: 'Mid-size industrial use' },
+      { size: '215/228 kg', type: 'Aseptic Bag in Drum', desc: 'Bulk industrial supply' },
     ],
     image: '/Product/Mango.png',
     accentFrom: '#DC2626',
@@ -235,7 +235,7 @@ export default function HomeContent() {
                     <div className="mb-8">
                       <h4 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Packaging Options</h4>
                       <div className="grid grid-cols-2 gap-3">
-                        {((product as any).packaging as { image: string; size: string; type: string; desc: string }[]).map((pkg, i) => (
+                        {((product as any).packaging as { size: string; type: string; desc: string }[]).map((pkg, i) => (
                           <div
                             key={i}
                             className="border border-gray-100 rounded-xl p-4 hover:border-gray-200 hover:shadow-md transition-all bg-white group/pkg"

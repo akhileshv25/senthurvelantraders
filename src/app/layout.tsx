@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://senthurvelavantraders.com'),
   title: {
     default: 'Senthur Velavan Traders Pvt Ltd - Premium Agriculture Products Export | Tamil Nadu India',
     template: '%s | Senthur Velavan Traders Pvt Ltd',
@@ -35,15 +36,15 @@ export const metadata: Metadata = {
     url: 'https://senthurvelavantraders.com/',
     title: 'Senthur Velavan Traders Pvt Ltd - Premium Agriculture Products Export | Tamil Nadu India',
     description: 'Leading exporter of premium agriculture products including turmeric, bananas, mango pulp, and spices from Tamil Nadu, India. HACCP certified, serving 25+ countries worldwide.',
-    images: [{ url: 'https://senthurvelavantraders.com/logo.svg', width: 1200, height: 630 }],
+    images: [{ url: 'https://senthurvelavantraders.com/og-image.png', width: 1200, height: 630, alt: 'Senthur Velavan Traders Pvt Ltd — Premium Agriculture Export' }],
     siteName: 'Senthur Velavan Traders Pvt Ltd',
-    locale: 'en_US',
+    locale: 'en_IN',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Senthur Velavan Traders Pvt Ltd - Premium Agriculture Products Export | Tamil Nadu India',
     description: 'Leading exporter of premium agriculture products including turmeric, bananas, mango pulp, and spices from Tamil Nadu, India. HACCP certified, serving 25+ countries worldwide.',
-    images: ['https://senthurvelavantraders.com/logo.svg'],
+    images: ['https://senthurvelavantraders.com/og-image.png'],
   },
   alternates: {
     canonical: 'https://senthurvelavantraders.com/',
@@ -58,10 +59,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/logo.svg', sizes: '32x32' },
-      { url: '/logo.svg', sizes: '16x16' },
+      { url: '/logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/logo.png', sizes: '16x16', type: 'image/png' },
     ],
-    apple: '/logo.svg',
+    apple: '/logo.png',
   },
 };
 
@@ -71,7 +72,7 @@ const structuredData = {
   name: 'Senthur Velavan Traders Private Limited',
   alternateName: 'Senthur Velavan Traders Pvt Ltd',
   url: 'https://senthurvelavantraders.com',
-  logo: 'https://senthurvelavantraders.com/logo.svg',
+  logo: 'https://senthurvelavantraders.com/logo.png',
   description: 'Leading exporter of premium agriculture products including turmeric, bananas, mango pulp, and spices from Tamil Nadu, India.',
   foundingDate: '2025',
   address: {
@@ -120,6 +121,17 @@ const structuredData = {
   },
 };
 
+const websiteData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Senthur Velavan Traders Pvt Ltd',
+  url: 'https://senthurvelavantraders.com',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Senthur Velavan Traders Private Limited',
+  },
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -127,6 +139,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
         />
       </head>
       <body className={`${inter.variable} font-sans`}>

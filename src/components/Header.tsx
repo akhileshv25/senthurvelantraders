@@ -68,7 +68,7 @@ const Header = () => {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
               <img
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Senthur Velavan Traders"
                 className="h-10 w-10 sm:h-11 sm:w-11 object-contain"
               />

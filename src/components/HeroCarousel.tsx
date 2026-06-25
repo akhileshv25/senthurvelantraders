@@ -237,7 +237,10 @@ export default function HeroCarousel() {
                 >
                   <img
                     src={slide.image}
-                    alt={slide.titleAccent}
+                    alt={`${slide.title} ${slide.titleAccent}`}
+                    width={550}
+                    height={550}
+                    fetchPriority="high"
                     className="w-[550px] h-[550px] object-contain drop-shadow-2xl transition-all duration-500 group-hover/img:drop-shadow-[0_30px_60px_rgba(0,0,0,0.3)] group-hover/img:brightness-105 group-hover/img:saturate-110"
                   />
                   {/* Hover glow ring */}
